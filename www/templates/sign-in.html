@@ -1,0 +1,25 @@
+﻿<ion-view view-title="{{'SIGNIN' | translate}}" cache-view="false">
+    <ion-content>
+        <div class="padding">
+            <h4>Login to my myExpenses account</h4>
+        </div>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">{{"FORM_EMAIL" | translate}}</span>
+                <input type="text" ng-model="user.email">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">{{"FORM_PASSWORD" | translate}}</span>
+                <input type="password" ng-model="user.password">
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive button-theme" ng-click="signIn(user)" nav-clear>
+                {{"SIGNIN" | translate}}
+            </button>
+            <p class="text-center">
+                <a href="#/register">{{"REGISTER_DONTHAVEACCOUNT" | translate}}</a>
+            </p>
+        </div>
+    </ion-content>
+</ion-view>

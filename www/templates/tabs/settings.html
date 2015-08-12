@@ -1,0 +1,26 @@
+<ion-view view-title="{{'TABS_NAME_SETTINGS'| translate}}">
+    <ion-header-bar align-title="left" class="bar bar-subheader bar-positive">
+        <h1 class="title">Current House: {{currentHouse.name}}</h1>
+    </ion-header-bar>
+    <ion-content class="has-header has-subheader">
+        <div class="list">
+            <ion-item type="item-text-wrap" href="#">
+                <span class="item-title">{{'SETTINGS_EDIT_PROFILE'| translate}}</span>
+            </ion-item>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                  {{'SETTINGS_LANGUAGE'| translate}}
+                </div>
+                <select ng-options="language.name for language in languages" ng-model="selectLanguage" ng-change="updateLanguage(selectLanguage)"></select>
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive button-theme" ng-click="quitHouse()">
+                {{'SETTINGS_QUIT_HOUSE'| translate}}
+            </button>
+            <button class="button button-block button-dark button-theme" ng-click="logout()">
+                {{'LOGOUT'| translate}}
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

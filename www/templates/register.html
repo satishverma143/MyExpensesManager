@@ -1,0 +1,33 @@
+﻿<ion-view view-title="{{'REGISTER' | translate}}" cache-view="false">
+    <ion-content>
+        <div class="padding">
+            <h4>Create a myExpenses account</h4>
+        </div>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">{{"FORM_FIRSTNAME" | translate}}</span>
+                <input type="text" ng-model="user.firstname">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">{{"FORM_SURNAME" | translate}}</span>
+                <input type="text" ng-model="user.surname">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">{{"FORM_EMAIL" | translate}}</span>
+                <input type="email" ng-model="user.email">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">{{"FORM_PASSWORD" | translate}}</span>
+                <input type="password" ng-model="user.password">
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive button-theme" ng-click="createUser(user)">
+                {{"REGISTER" | translate}}
+            </button>
+            <p class="text-center">
+                <a href="#/sign-in">{{"REGISTER_ALREADYHAVEACCOUNT" | translate}}</a>
+            </p>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,23 @@
+<ion-view view-title="{{member.firstname}} {{member.surname}}">
+    <ion-header-bar align-title="left" class="bar bar-subheader bar-positive">
+        <h1 class="title">Member Detail</h1>
+    </ion-header-bar>
+    <ion-content class="has-header has-subheader">
+        <label class="item item-input">
+            <span class="input-label">{{"FORM_FIRSTNAME" | translate}}</span>
+            <input type="text" ng-model="member.firstname">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">{{"FORM_SURNAME" | translate}}</span>
+            <input type="text" ng-model="member.surname">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">{{"FORM_EMAIL" | translate}}</span>
+            <input type="text" ng-model="member.email">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">{{"FORM_HOUSE_CODE" | translate}}</span>
+            <input type="text" ng-model="member.houseid">
+        </label>
+    </ion-content>
+</ion-view>

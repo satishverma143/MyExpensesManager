@@ -1,0 +1,18 @@
+<ion-view view-title="Join a House" cache-view="false">
+    <ion-content>
+        <div class="padding">
+            <h4>Joining an existing house</h4>
+            <p class="text-center">Please enter the house code.</p>
+            <p class="text-center"><b>Developer Notes</b> Join me with : 00763256</p>
+        </div>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">House Code</span>
+                <input type="number" ng-model="code">
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive button-theme" ng-click="joinHouse(code)" nav-clear>Join</button>
+        </div>
+    </ion-content>
+</ion-view>

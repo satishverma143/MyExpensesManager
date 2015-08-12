@@ -1,0 +1,12 @@
+{
+  "name": "MyExpensesManager",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.1"
+  },
+  "dependencies": {
+    "firebase": "2.2.9",
+    "angular-translate": "2.7.2",
+    "angularfire": "1.1.2"
+  }
+}

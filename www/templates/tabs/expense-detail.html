@@ -1,0 +1,23 @@
+<ion-view view-title="{{expense.purpose}}">
+    <ion-header-bar align-title="left" class="bar bar-subheader bar-positive">
+        <h1 class="title">Expense Detail</h1>
+    </ion-header-bar>
+    <ion-content class="has-header has-subheader">
+        <label class="item item-input">
+            <span class="input-label">Purpose</span>
+            {{expense.purpose}}
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Amount</span> 
+            <i class="icon ion-social-usd placeholder-icon"></i> {{expense.amount | number:2}}
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Date</span> 
+            {{expense.created | date:'d MMMM yyyy h:mm a'}}
+        </label>
+        <label class="item item-input">
+            <span class="input-label">User</span> 
+            {{expense.user}}
+        </label>
+    </ion-content>
+</ion-view>
