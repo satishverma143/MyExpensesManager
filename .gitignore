@@ -9,7 +9,7 @@ bin/
 bld/
 hooks/
 scss/
-MyExpensesManager.jsproj
-MyExpensesManager.jsproj.user
-MyExpensesManager.sln
+.jsproj
+.jsproj.user
+.sln
 
